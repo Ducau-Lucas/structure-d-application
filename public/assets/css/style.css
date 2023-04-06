@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@400;500&family=Poppins&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	background-image: url(../img/landscape-mountains-sky-4843193.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	display: flex;
+	justify-content: center;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(
+		at center center,
+		#153243 0%,
+		#1a6c7a 100%
+	);
+	opacity: 0.5;
+	transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+nav {
+	position: fixed;
+	z-index: 20;
+	height: min-content;
+	padding: 1rem;
+	width: 100vw;
+	/* max-width: 1240px; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
+}
+.bgOpaque {
+	background-color: rgb(26, 108, 122, 1);
+}
+#menu_large {
+	max-width: 1240px;
+}
+nav ul {
+	flex-direction: row;
+}
+#burger {
+	display: none;
+}
+
+nav > div:nth-child(2) {
+	display: flex;
+	gap: 5rem;
+}
+
+nav > div > ul {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+nav li {
+	/* margin-right: 2rem; */
+}
+nav a {
+	text-decoration: none;
+	color: white;
+}
+nav button {
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	padding: 15px 30px;
+	width: max-content; /*pour grid*/
+	background-color: rgb(26, 108, 122);
+	color: white;
+	border: none;
+	transition: all 0.5s;
+}
+nav button:hover {
+	background-color: rgb(21, 50, 67);
+}
+.visible {
+	display: flex;
+}
+
+.headerSlogan {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.headerSlogan h1 {
+	font-size: 50px;
+	margin: 0 0 20px 0;
+}
+.headerSlogan h2 {
+	font-size: 28px;
+	margin: 0 0 20px 0;
+}
+.headerSlogan p {
+	max-width: 700px;
+	font-size: 16px;
+	margin: 0 0 50px 0;
+	text-align: center;
+	line-height: 24px;
+}
+.headerSlogan button {
+	padding: 16px 40px;
+	letter-spacing: 2px;
+	box-sizing: border-box;
+	border: 2px solid white;
+}
+.headerSlogan div {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+.headerSlogan button:nth-child(1) {
+	color: white;
+	background-color: transparent;
+}
+.headerSlogan button:nth-child(2) {
+	color: rgb(26, 108, 122);
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main section.services {
+	display: flex;
+	justify-content: space-evenly;
+	width: 60%;
+	gap: 20px;
+	padding: 100px 0px;
+}
+main section.services article {
+	display: flex;
+	align-items: center;
+	width: 20vw;
+	height: 20vw;
+	position: relative;
+}
+.services article:nth-child(1) {
+	background: url(https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/green-leafed-trees-during-fog-time-167684.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.services article:nth-child(2) {
+	background: url(https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/snowy-mountain-1287145.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.services article:nth-child(3) {
+	background: url(https://websitedemos.net/mountain/wp-content/uploads/sites/571/2020/04/photo-of-people-standing-on-top-of-mountain-near-grasses-733162.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.services h2 {
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.75rem;
+	z-index: 2;
+	font-weight: 600;
+}
+.amazing {
+	display: flex;
+	justify-content: space-evenly;
+	width: 60%;
+	margin-bottom: 100px;
+}
+.amazing article {
+	width: 50%;
+}
+.amazing article h2 {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.btnBorderTransparent {
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	padding: 15px 30px;
+	width: max-content; /*pour grid*/
+	background-color: transparent;
+	color: rgb(21, 50, 67);
+	border: none;
+	transition: all 0.5s;
+	border: solid 2px rgb(26, 108, 122);
+}
+#btn_our_history:hover {
+	background-color: rgb(21, 50, 67);
+}
+.amazing p {
+	line-height: 1.5rem;
+}
+.callToAction {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 150px 0;
+	color: white;
+	background: url(../img/fogs-on-green-mountain-1054222.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.callToAction h2 {
+	font-size: 2rem;
+	font-weight: 500;
+}
+.callToAction p {
+	max-width: 600px;
+	text-align: center;
+	line-height: 2rem;
+	margin-bottom: 4rem;
+}
+.callToAction h2,
+p,
+button {
+	z-index: 10;
+}
+#btn_contact {
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	padding: 15px 30px;
+	width: max-content; /*pour grid*/
+	background-color: transparent;
+	color: white;
+	border: solid 2px white;
+	transition: all 0.5s;
+}
+.images {
+	width: 100%;
+	background-color: #f3f9fb;
+	display: flex;
+	justify-content: center;
+}
+.images div {
+	padding: 100px 0;
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+}
+.images article {
+	max-width: 33.33%;
+	padding: 7px 10px;
+	box-sizing: border-box;
+}
+.images img {
+	max-width: 100%;
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #000f2b;
+}
+footer h2 {
+	font-weight: 400;
+	margin-bottom: 1em;
+	line-height: 1.5;
+}
+footer svg {
+	width: 14px;
+	height: 14px;
+	fill: #1a6c7a;
+}
+.footer1 {
+	display: flex;
+	max-width: 1240px;
+	width: 100vw;
+	padding: 50px 0;
+}
+.footer1 > div {
+	width: 33.33%;
+}
+.footer1 img {
+	margin-bottom: 30px;
+}
+.social_icons {
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	margin-top: 40px;
+}
+.social_icons li {
+	width: 50px;
+}
+footer div {
+	text-align: center;
+}
+footer p {
+	font-weight: bold;
+	font-size: 16px;
+	color: rgb(26, 108, 122);
+}
+footer a {
+	text-decoration: none;
+	color: #000f2b;
+	font-size: 15px;
+	line-height: 22.5px;
+}
+.footer2 {
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	border-style: solid;
+	border-width: 0px;
+	border-top-width: 1px;
+	border-top-color: #dbe8eb;
+	color: rgb(26, 108, 122);
+}

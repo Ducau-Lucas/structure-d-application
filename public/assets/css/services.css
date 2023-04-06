@@ -1,0 +1,31 @@
+.servicesSection{
+    display: flex;
+    max-width: 1240px;
+    padding: 50px 0;
+}
+.servicesSection:nth-child(1){
+    padding-top: 100px;
+}
+.servicesSection article{
+    width: 50%;
+    max-width: 620px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.servicesSection:nth-child(2n) article:nth-child(1){
+    order: 2;
+    padding-left: 30px;
+}
+.servicesSection h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.servicesSection p{
+    max-width: 520px;
+    font-size: 18px;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+.servicesSection img{
+    max-width: 100%;
+}

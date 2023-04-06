@@ -1,0 +1,17 @@
+.established{
+    padding: 100px 0;
+    max-width: 1240px;
+    display: flex;
+}
+.established > *{
+    width: 50%;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+.established h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.established p:first-child{
+    font-weight: bold;
+}
