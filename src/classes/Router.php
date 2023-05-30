@@ -13,11 +13,4 @@ class Router {
         return $this->page;
     }
 
-    public function includeTemplate(): void {
-        if (file_exists(PAGES . $this->page . ".php")) {
-            include PAGES . $this->page . ".php";
-        } else {
-            include PAGES . "page404.php";
-        }
-    }
 }

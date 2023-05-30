@@ -18,7 +18,16 @@
     <?php
     include TEMPLATE_PARTS . '/_header.php';
 
-    $router->includeTemplate();
+    render($router);
+    
+    function render($router){
+        if (file_exists(PAGES . $router->getPage() . ".php")) {
+            include PAGES . $router->getPage() . ".php";
+        } else {
+            include PAGES . "page404.php";
+        }
+
+    }
 
     include TEMPLATE_PARTS . '/_footer.php'; 
     ?>
