@@ -31,7 +31,11 @@ class Controller
             $this->render($titre);
         }
         
-        
+        public function notFound(){
+            $titre = "404 Not Found";
+            $this->render($titre);
+        }
+
         public function render($titre=null){
             
             $pageLink = CSS . "/" . $this->router->getPage() . ".css";

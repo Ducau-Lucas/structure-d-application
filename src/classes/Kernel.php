@@ -13,8 +13,9 @@ class Kernel {
         $routes = include './src/config/routes.php';
         if(array_key_exists($router->getPage(), $routes)){
             $methodName = $routes[$router->getPage()];
-            var_dump($methodName);
             $controller->$methodName();
+        } else {
+            $controller->notFound();
         }
     
     }
