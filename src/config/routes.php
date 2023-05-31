@@ -2,7 +2,7 @@
 // correspondance entre le paramètre page de l'url et la méthode de controller à appeler
 return [
     "accueil" => "accueil",
-    "about" => "A propos",
+    "about" => "about",
     "services" => "services",
-    "contact" => "Contact"
+    "contact" => "contact"
 ];
